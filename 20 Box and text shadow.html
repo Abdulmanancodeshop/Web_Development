@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        border: 2px solid red;
+        margin: 4px 4px;
+        background-color: burlywood;
+        padding: 23px 10px;
+        /* box-shadow: offset-x offset-y color */
+        /* box-shadow: offset-x offset-y blur-radius color */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius  color */
+        /* box-shadow: 10px 10px 5px rgba(255,12,155,0.7); we can also add the blur radius */
+        box-shadow:  inset 10px 10px 5px greenyellow, 10px 20px 4px blue; /*inset we use to add the shadow inside the box*/
+    
+    }
+    .card h2{
+        text-shadow: 2px 3px white;
+    }
+</style>
+<body>
+    <div class="container">
+    <div class="card" id="card1">
+        <h2>We Learn C++ Tut inshaAllah</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non similique ipsa fugiat repudiandae adipisci exercitationem architecto eaque dolores. Harum, assumenda.</p>
+    </div>
+    <div class="card" id="card2">
+        <h2>Card2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe temporibus repellat ex ratione aut amet unde officia a porro.</p>
+    </div>
+    <div class="card" id="card3">
+        <h2>We Learn HTML Tut inshaAllah</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo illum soluta nisi, excepturi nobis aliquam accusamus enim iure quibusdam harum.</p>
+    </div>
+    <div class="card" id="card4">
+        <h2>Card4</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi unde dicta voluptate sint, praesentium ipsa rem vero eaque dolore error?</p>
+    </div>
+</div>
+</body>
+</html>

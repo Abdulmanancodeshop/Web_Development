@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child psudo selector</title>
+</head>
+<style>
+.container{
+    display: block;
+    width: 40%;
+    margin: auto;
+    /* border: 2px solid magenta; */
+    padding: 10px 14px;
+    font-size: 33px;;
+}
+input{
+    display: block;
+    font-size: 33px;;
+}
+input[type='text']{
+    border: 2px solid red;
+}
+a[target="_blank"]{
+    color: cyan;
+}
+input[type="email"]{
+    background: yellowgreen;
+}
+/* this will apply css on 3rd child of li */
+li:nth-child(3){
+    color: yellowgreen;
+    border: 2px solid black;
+}
+li:nth-child(2n){
+    color: brown;
+}
+li:nth-child(odd){
+    color:cyan;
+    /* right: 33px; */
+    font-size: 44px;;
+}
+</style>
+<body>
+    <div class="container">
+        <h1><a href="http://googe.com " target="_blank">Go to google</a></h1>
+        <form action=".php">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your emai">
+            <input type="phone no" placeholder="Enter your phone no">
+            <input type="place" placeholder="Enter your locality">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+       <li class="item" id="item1">Item1</li>
+       <li class="item" id="item2">Item2</li>
+       <li class="item" id="item3">Item3</li>
+       <li class="item" id="item4">Item4</li>
+       <li class="item" id="item5">Item5</li>
+       <li class="item" id="item6">Item6</li>     
+        </ul>
+    </div>
+</body>
+</html>

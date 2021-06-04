@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        body{
+            background-color: rgb(155, 151, 212);
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: #f1b3b3;
+            /* padding: 13px; */
+            margin: 10px 14px;
+            /* margin-top: 10px; */
+            background-image: url(https://st.depositphotos.com/1006019/4313/i/950/depositphotos_43131985-stock-photo-lite-blue-and-white-background.jpg);
+            /* padding-left: 33px;
+            padding-right: 40px; */
+            /*padding: 34px 19 px; padding: y(top/bottom)  x(left/right);*/
+            padding : 23px 56px 10px 20px; /*padding= top,right,bottom,left*/
+            border: 2px solid black;
+            border-radius: 10px; 
+            width: 500px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is box model chapter</h1>
+        <p id="myfirst">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At sunt, minima alias dolorum aspernatur natus non temporibus maxime iusto exercitationem atque voluptates, reprehenderit voluptas totam cupiditate inventore quae quos quaerat molestiae molestias mollitia iste ab tempore. Dolores nulla obcaecati architecto reiciendis, delectus itaque ex. Nihil!</p>
+    </div>
+    <div class="container">
+        <h1>this is box model chapter</h1>
+        <p id="mysecond">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At sunt, minima alias dolorum aspernatur natus non temporibus maxime iusto exercitationem atque voluptates, reprehenderit voluptas totam cupiditate inventore quae quos quaerat molestiae molestias mollitia iste ab tempore. Dolores nulla obcaecati architecto reiciendis, delectus itaque ex. Nihil!</p>
+    </div>
+    <div class="container">
+        <h1>this is box model chapter</h1>
+        <p id="mythird">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At sunt, minima alias dolorum aspernatur natus non temporibus maxime iusto exercitationem atque voluptates, reprehenderit voluptas totam cupiditate inventore quae quos quaerat molestiae molestias mollitia iste ab tempore. Dolores nulla obcaecati architecto reiciendis, delectus itaque ex. Nihil!</p>
+    </div>
+</body>
+</html>

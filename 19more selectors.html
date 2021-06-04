@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+</head>
+<style>
+    section {
+        display: flex;
+        margin: 8px 139px;
+        flex-direction: column;
+        text-align: center;
+        /* border: 2px solid red; */
+        height: 333px;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    /* section::before{
+    content:"We add a new content"
+} */
+    body {
+        background-color: black;
+        color: white;
+        /* background: url("https://source.unsplash.com/user/erondu/1600x900") no-repeat center center/cover; */
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+    }
+
+    header::before {
+        background: url("https://source.unsplash.com/user/erondu/1600x900") no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0px;
+        /* left: 0px; */
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+        /*show the image lighter and text will readable */
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .item {
+        padding: 34px 33px;
+        /* text-decoration: none; */
+        list-style: none;
+
+
+        color: white;
+    }
+
+    /* .selector li a:hover{
+    color: white;
+    text-decoration: none;
+} */
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .navbar li a:hover {
+        color: cyan;
+    }
+
+    .form {
+        display: block;
+        text-align: center;
+        margin: auto;
+        /* padding: ; */
+        font-size: 24px;
+        width: 30%
+    }
+    .button{
+        text-align: center;
+        margin: auto;
+    }
+    input[type="button"]{
+        text-align: center;
+        width: 10%;
+        margin: auto;
+        /* display: flex; */
+        /* justify-content: center; */
+        color: blue;
+        font-size: 20px;
+
+    }
+    input[type="reset"]{
+        text-align: center;
+        width: 10%;
+        margin: auto;
+        /* display: flex; */
+        /* justify-content: center; */
+        color: blue;
+        font-size: 20px;
+
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis, repudiandae labore nesciunt
+            tenetur velit molestiae natus et recusandae harum.</p>
+    </section>
+    <form action="">
+        <div class="form">
+            <input type="text" placeholder="Enter Your name">
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Enter Your Email">
+        </div>
+        <div class="form">
+            <input type="phone_no" placeholder="Enter Your phone no">
+        </div>
+        <div class="form">
+            <input type="locality" placeholder="Enter Your Locality">
+        </div>
+        <input type="button" value="Submit" class="button">
+        <input type="reset" value="Reset" class="button">
+    </form>
+
+</body>
+
+</html>

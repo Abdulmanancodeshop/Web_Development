@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOre on Css selector</title>
+</head>
+<style>
+    h1{
+        color: black;
+        background-color: mediumturquoise;
+        font-weight: bold;
+        text-align: center;
+    }
+    /* it will work on all para that inside div  */
+    /* div p{
+        background-color: navajowhite;
+        font-size: 23px;
+    } */
+    /* > its only affect on p that instantly after div and p must be a child of div */
+    /* div > p{
+        background-color: navajowhite;
+        font-size: 23px;
+    } */
+    /* + its only affect on p that have upper sibling  is div */
+    div + p{
+        color: white;
+        background-color: orange; 
+        font-weight: bold;
+    }
+</style>
+<body>
+    <h1>This heading is about more on css selector</h1>
+    <div class="container">
+        <p>this is first para</p>
+        <div class="box">
+            <ul>
+                <li>this is something about li</li>
+            </ul>
+<p>this is second para</p>
+        </div>
+    </div>
+    <p>this is third para</p>
+</body>
+</html>
